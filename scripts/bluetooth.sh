@@ -49,15 +49,15 @@ create_known_bluetooth_template() {
 {
   "devices": [
     {
-      "name": "Brynn's iPhone",
-      "person": "Brynn",
+      "name": "iPhone",
+      "person": "person1",
       "mac_address": ["00:11:22:33:44:55"],
       "device_type": "phone",
-      "welcome_message": "Brynn is home! (Phone detected)"
+      "welcome_message": "person1 is home! (Phone detected)"
     },
     {
-      "name": "Alex's Headphones",
-      "person": "Alex",
+      "name": "Headphones",
+      "person": "person2",
       "mac_address": ["AA:BB:CC:DD:EE:FF"],
       "device_type": "audio",
       "welcome_message": "Alex's headphones detected (Audio device)"
@@ -85,7 +85,7 @@ get_bluetooth_info() {
     #   $1 - MAC address to lookup
     # Returns:
     #   Pipe-separated string: device_name|welcome_message|is_known
-    #   Example: "Brynn's iPhone|Brynn is home!|true"
+    #   Example: "iPhone|Person1 is home!|true"
     
     local mac="$1"
     local device_name="Unknown"
