@@ -1,0 +1,60 @@
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+HomeDefence — Autonomous Home Security System
+Copyright (C) 2025 Brynn-P (https://github.com/Brynn-P)
+
+========================================================================
+ATTRIBUTION REQUIREMENT (Additional Term under GNU GPL v3 Section 7)
+========================================================================
+
+This software and any derivative works must retain the following
+attribution in all copies, substantial portions, documentation,
+and any public-facing descriptions of the software:
+
+    "HomeDefence by Brynn-P (https://github.com/Brynn-P)"
+
+This attribution must appear in:
+  - Source code headers or a prominent CREDITS/NOTICE file
+  - Any README, documentation, or project description
+  - Any published application, tool, or system that incorporates
+    this code in whole or in part
+
+========================================================================
+GNU GENERAL PUBLIC LICENSE
+========================================================================
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+The full text of the GNU General Public License v3 is available at:
+https://www.gnu.org/licenses/gpl-3.0.txt
+
+========================================================================
+SUMMARY OF YOUR RIGHTS AND OBLIGATIONS
+========================================================================
+
+You are FREE to:
+  - Use this software for any purpose, including commercially
+  - Study how it works and modify it
+  - Distribute copies of the original or your modified version
+  - Build on it and release your own projects based on it
+
+PROVIDED THAT you:
+  - Keep this license and copyright notice intact
+  - Credit Brynn-P as the original author (see Attribution above)
+  - Release any modified or derivative work under this same license
+    (GPL v3 or later) — you may NOT make it closed source
+  - Make the source code of any derivative work publicly available
+
+========================================================================
+
+For questions about licensing or commercial arrangements, open an issue
+at https://github.com/Brynn-P/HomeDefence or contact via GitHub.

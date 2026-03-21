@@ -1,0 +1,18 @@
+{
+  "networks": [
+    {
+      "name": "Home WiFi",
+      "ssid": "YourHomeNetwork",
+      "bssid": ["00:11:22:33:44:55"],
+      "type": "trusted",
+      "alert_message": "Home WiFi detected "
+    },
+    {
+      "name": "Neighbor WiFi",
+      "ssid": "NeighborNetwork",
+      "bssid": ["AA:BB:CC:DD:EE:FF"],
+      "type": "known",
+      "alert_message": "Known neighbor WiFi "
+    }
+  ]
+}

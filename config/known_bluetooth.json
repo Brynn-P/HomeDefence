@@ -1,0 +1,25 @@
+{
+  "devices": [
+    {
+      "name": "Not my name",
+      "person": "you",
+      "mac_address": ["00:11:22:33:44:55"],
+      "device_type": "phone",
+      "welcome_message": "you are home! "
+    },
+    {
+      "name": "Alex's Headphones",
+      "person": "Alex",
+      "mac_address": ["AA:BB:CC:DD:EE:FF"],
+      "device_type": "audio",
+      "welcome_message": "Alex's headphones detected "
+    },
+    {
+      "name": "Smart Watch",
+      "person": "Family",
+      "mac_address": ["11:22:33:44:55:66"],
+      "device_type": "wearable",
+      "welcome_message": "Smart watch detected "
+    }
+  ]
+}
