@@ -6,27 +6,6 @@ cat > /tmp/test_bt_output.txt << 'EOF'
 [bluetooth]# scan on
 Agent registered
 Changing power on succeeded
-[CHG] Controller E4:5F:01:80:6F:32 Pairable: yes
-Discovery started
-[CHG] Controller E4:5F:01:80:6F:32 Discovering: yes
-[NEW] Device 7C:78:B2:70:81:5A wyze_hub
-[NEW] Device C8:84:47:4A:74:6D YamahaAV
-[NEW] Device C5:0C:10:D5:75:44 M203T_4475d5
-[CHG] Device 7C:78:B2:70:81:5A RSSI: -28
-[CHG] Device C8:84:47:4A:74:6D RSSI: -80
-[NEW] Device 8C:90:2D:83:6C:6E _hsxBm
-[bluetooth]# scan off
-[bluetooth]# devices
-Device 7C:78:B2:70:81:5A wyze_hub
-Device C8:84:47:4A:74:6D YamahaAV
-Device C5:0C:10:D5:75:44 M203T_4475d5
-Device 8C:90:2D:83:6C:6E _hsxBm
-[CHG] Device 8C:90:2D:83:6C:6E RSSI is nil
-[CHG] Device C5:0C:10:D5:75:44 TxPower is nil
-[CHG] Device C5:0C:10:D5:75:44 RSSI is nil
-[CHG] Device C8:84:47:4A:74:6D RSSI is nil
-[CHG] Device 7C:78:B2:70:81:5A RSSI is nil
-[CHG] Controller E4:5F:01:80:6F:32 Discovering: no
 Discovery stopped
 [bluetooth]# quit
 EOF
