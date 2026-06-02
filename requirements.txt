@@ -19,7 +19,7 @@ requests-cache==1.2.1
 retry-requests==2.0.0
 typing_extensions==4.14.1
 url-normalize==2.2.1
-urllib3==2.6.3
+urllib3==2.7.0
 urllib3-future==2.13.900
 wassima==1.2.2
 yarg==0.1.10
