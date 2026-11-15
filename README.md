@@ -253,6 +253,9 @@ DISCORD_WEBHOOK_BLUETOOTH=https://discord.com/api/webhooks/...
 # Python packages
 pip3 install picamera2 opencv-python python-dotenv requests
 
+#if there is an error here first install
+sudo apt-get update && sudo apt-get install -y python3.13-dev
+
 # System packages
 sudo apt install nmap netcat-openbsd aircrack-ng bluez
 ```
