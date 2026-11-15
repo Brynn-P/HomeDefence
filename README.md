@@ -247,6 +247,11 @@ DISCORD_WEBHOOK_BLUETOOTH=https://discord.com/api/webhooks/...
 
 ## Installation
 
+## It is my personal preference to run this in a python venv
+# From within the HomeDefence Dir
+python3 -m venv homeVenv
+source homeVenv/bin/activate 
+
 **Dependencies**
 
 ```bash
@@ -286,7 +291,7 @@ python3 /homedefence/scripts/motion.py
 ```
 
 **Run as a systemd service**
-
+## Read all steps below ##
 ```ini
 # /etc/systemd/system/homedefence.service
 [Unit]
@@ -306,6 +311,26 @@ WantedBy=multi-user.target
 ```bash
 sudo systemctl enable --now homedefence
 ```
+### Copy and Paste script
+### **You need to adjust your path here to your own venv **
+
+sudo tee /etc/systemd/system/homedefence.service > /dev/null << EOF
+[Unit]
+Description=HomeDefence Security System
+After=network.target
+
+[Service]
+ExecStart=$(pwd)/HomeDefence/homeVenv/bin/python -u $(pwd)/HomeDefence/scripts/motion.py
+WorkingDirectory=$(pwd)/HomeDefence/scripts
+Restart=always
+RestartSec=5
+User=$USER
+
+[Install]
+WantedBy=multi-user.target
+EOF
+sudo systemctl daemon-reload && sudo systemctl enable --now homedefence.service
+
 
 ---
 
@@ -324,3 +349,8 @@ sudo systemctl enable --now homedefence
 - Bluetooth range is approximately 10 m. Devices using MAC address randomisation (most modern phones) will not be consistently identified.
 - The two hardcoded subnets (`192.168.0.0/24` and `10.0.10.0/24`) are not currently configurable without editing `internal_defence.sh`.
 - There is no per-device alert cooldown — an unknown device present in every scan will be reported every time motion triggers.
+
+## Known bugs that are to be fixed
+-first run of wardrive scanner output to be corrected.
+  - currently
+  - HomeDefence/scripts/wardrive_scan.sh: line 51: $'\n    Create a template JSON file for user to configure their known WiFi networks\n    Returns:\n        0 if template already exists\n        1 if template was just created (user needs to edit it)\n    ': command not found
