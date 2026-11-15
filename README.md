@@ -247,8 +247,9 @@ DISCORD_WEBHOOK_BLUETOOTH=https://discord.com/api/webhooks/...
 
 ## Installation
 
-## It is my personal preference to run this in a python venv
-# From within the HomeDefence Dir
+  It is my personal preference to run this in a python venv
+  From within the HomeDefence Dir
+
 python3 -m venv homeVenv
 source homeVenv/bin/activate 
 
