@@ -8,9 +8,9 @@ h11==0.16.0
 idna==3.15
 jh2==5.0.9
 niquests==3.14.1
+opencv-python-headless
 openmeteo_requests==1.6.0
 openmeteo_sdk==1.20.1
-pipreqs==0.4.13
 platformdirs==4.3.8
 python-nmap==0.7.1
 qh3==1.5.3
@@ -22,4 +22,3 @@ url-normalize==2.2.1
 urllib3>=2.8.0
 urllib3-future==2.13.900
 wassima==1.2.2
-yarg==0.1.10
