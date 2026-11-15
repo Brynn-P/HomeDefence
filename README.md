@@ -1,5 +1,7 @@
 # HomeDefence
 
+### This repo is not currently functional, of you really want to you can get it to work, but for now it is under repair
+
 Autonomous home security system for Raspberry Pi. Monitors for motion, unknown network devices, nearby Wi-Fi access points, and Bluetooth devices. Sends alerts to Discord.
 
 Please note, I am currently working on a setup script to allow for easy set up and will add this to the build in the future
